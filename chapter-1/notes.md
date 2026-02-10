@@ -14,6 +14,7 @@
 ## Simpson's paradoc: an example
 
 ||Drug|No drug|
+|---|---|---|
 |Men|81/87|234/270|
 |Women|192/263|55/80|
 Combined|273/350|289/350|
