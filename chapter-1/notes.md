@@ -23,4 +23,20 @@ Combined|273/350 (78%)|289/350 (83%)|
 - The data alone can tell us neither why Simpson's paradox has manifested nor how to avoid it. We need to understand the mechanism(s) which caused the data to be generated. There are 2 points to consider: (1) a person randomly drawn from the 'drug' group is more likely to be a woman (2) oestrogen inhibits the rate of recovery from the disease, regardless of if the drug was taken.
 - Because the rate of recovery is dependent on trial participants' sex, conclusions should be drawn from data stratified on sex, not aggregated data. Basing conclusions on sex-stratified data allows Simpson's paradox to be avoided, and conclude the drug is beneficial for men and women.
 
+## When stratification fails
 
+- Pearl provides an example of data generated from another drug trial. It is the same data from the last example, except the "drug" and "no drug" columns have had their labels transposed, the drug affects recovery by lowering blood pressure, has a toxic side-effect and data is stratfied on participants blood pressure recorded at the *end* of the experiment. Simpson's paradox is present: data favours the drug at the population level, but not at the subgroup level. Pearl's hypothetical trial is poorly designed but that is besides the point. He poses the question: given what we know, and the recovery data (below), should we recommend the drug to patients?
+- Pearl concludes that we must base our conclusion on the aggregated data and not on BP-stratified data, because post-treatment BP is affected by the drug.
+
+||No drug|Drug|
+|---|---|---|
+|Low BP|81/87 (93%)|234/270 (87%)|
+|High BP|192/263 (73%)|55/80 (69%)|
+Combined|273/350 (78%)|289/350 (83%)|
+
+## General principles which have emerged
+
+- The data does not tell the whole story, it must be combined with qualitative information taken from other sources to gain an understanding of the causal mechanisms which caused it to be created to help us understand if one variable influences, or is influenced by another.
+- It is safe to stratify data on variables which exert an influence on the thing we are investigating.
+- It is not safe to stratify data on variables which are influenced by the thing we are investigating.
+- X causes Y, if Y listens to X and changes its value in response to what it hears.
