@@ -40,3 +40,13 @@ Combined|273/350 (78%)|289/350 (83%)|
 - It is safe to stratify data on variables which exert an influence on the thing we are investigating.
 - It is not safe to stratify data on variables which are influenced by the thing we are investigating.
 - X causes Y, if Y listens to X and changes its value in response to what it hears.
+
+## What is statistics?
+
+- Statistics is concerned with calculating the likelihood of events occurring. Those calculations are expressed as probabilities.
+- Variables are descriptors which can assume values. For example, the variable S could represent a person's sex, and can take on one of the following values "M" or "F".
+- An event is something which causes a value to be assigned to a variable.
+    - P(S=M) represents the probablity a person's sex is male.
+    - P(S=M,A<40) represented the probability a person's sex is male and their age is less than 40.
+- There is a concept of conditional probability. This is the idea that the probability of one thing being true changes depending on if something else is true.
+    - For example, the probability of having the flu is different if your temperature is 39 degrees, compared to if it were 37.5 degrees.
